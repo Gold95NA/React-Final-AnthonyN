@@ -1,0 +1,57 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', system-ui, sans-serif;
+}
+
+:root {
+  --bg: #0d0d0d;
+  --text: #00ffcc;
+  --accent: #bb3483;
+}
+
+[data-theme="dark"] {
+  --bg: #0d0d0d;
+  --text: #00ffcc;
+  --accent: #bb3483;
+}
+
+[data-theme="light"] {
+  --bg: #e0dede;
+  --text: #961b1b;
+  --accent: #0070ff;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Press Start 2P', system-ui, sans-serif;
+}
+
+body {
+  font-size: 12px;
+}
+
+button {
+  font-family: inherit;
+  background-color: var(--accent);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #1b8b4e;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
